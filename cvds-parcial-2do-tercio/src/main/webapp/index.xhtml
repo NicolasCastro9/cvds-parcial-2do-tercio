@@ -11,6 +11,14 @@
 
 <h:body style="margin-left:50px">
     <h2>Proyecto Plantilla - Parcial 2do Tercio</h2>
+    <h:form>
+        <h:panelGrid columns="2">
+           <h:outputLabel value="Nombre: " for="userName" />
+           <h:inputText id="userName" value="#{userBean.userName}" />
+           <h:outputText value="" />
+           <h:commandButton value="Ingresar" action="guess.xhtml"/>
+        </h:panelGrid>
+     </h:form>
     <p:editor />
 </h:body>
 </html>
